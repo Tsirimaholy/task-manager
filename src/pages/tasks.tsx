@@ -47,9 +47,6 @@ const TaskManager = () => {
 
             <input type="text" onChange={handleSearch} placeholder="Search Task"/>
             <ul>
-                {tasks.map(value => (<li key={value.id}>{value.title}</li>))}
-            </ul>
-            <ul>
                 {filteredTasks.map((task) => (
                     <li key={task.id}>
                         <input
